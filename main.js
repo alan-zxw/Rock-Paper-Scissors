@@ -21,5 +21,38 @@ function getHumanChoice() {
     return input
 }
 
+function playRound(humanChoice, computerChoice) {
+    console.log("------------------------------------")
+    if(humanChoice.toUpperCase() == computerChoice) {
+        console.log("It's a tie!")
+    }
+    else if(humanChoice.toUpperCase() == "ROCK" && computerChoice == "SCISSORS") {
+        console.log("You played: " + humanChoice + "\nComputer played: " + computerChoice + "\nYou win!")
+    }
+    else if(humanChoice.toUpperCase() == "ROCK" && computerChoice == "PAPER") {
+        console.log("You played: " + humanChoice + "\nComputer played: " + computerChoice + "\nYou lose!")
+    }
+
+    else if(humanChoice.toUpperCase() == "PAPER" && computerChoice == "SCISSORS") {
+        console.log("You played: " + humanChoice + "\nComputer played: " + computerChoice + "\nYou lose!")
+    }
+    else if(humanChoice.toUpperCase() == "PAPER" && computerChoice == "ROCK") {
+        console.log("You played: " + humanChoice + "\nComputer played: " + computerChoice + "\nYou win!")
+    }
+
+    else if(humanChoice.toUpperCase() == "SCISSORS" && computerChoice == "PAPER") {
+        console.log("You played: " + humanChoice + "\nComputer played: " + computerChoice + "\nYou win!")
+    }
+    else if(humanChoice.toUpperCase() == "SCISSORS" && computerChoice == "ROCK") {
+        console.log("You played: " + humanChoice + "\nComputer played: " + computerChoice + "\nYou lose!")
+    }
+    else {
+        console.log("Error occured. . .")
+    }
+
+    console.log("Current Score: " + humanScore + " to " + computerScore)
+    console.log("------------------------------------")
+}
+
 console.log(getComputerChoice())
 console.log(getHumanChoice())
