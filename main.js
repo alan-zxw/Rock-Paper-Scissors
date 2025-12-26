@@ -166,6 +166,7 @@ threeRounds.addEventListener("click", ()=>{
     rounds = 3;
     roundsLeft.textContent = rounds;
     computerResponse.textContent = "Computer";
+    winner.textContent = "";
     updateScore();
     updateRounds();
     allowPlay();
@@ -177,6 +178,7 @@ fiveRounds.addEventListener("click", ()=>{
     rounds = 5;
     roundsLeft.textContent = rounds;
     computerResponse.textContent = "Computer";
+    winner.textContent = "";
     updateScore();
     updateRounds();
     allowPlay();
@@ -188,6 +190,7 @@ sevenRounds.addEventListener("click", ()=>{
     rounds = 7;
     roundsLeft.textContent = rounds;
     computerResponse.textContent = "Computer";
+    winner.textContent = "";
     updateScore();
     updateRounds();
     allowPlay();
@@ -196,9 +199,10 @@ sevenRounds.addEventListener("click", ()=>{
 infiniteRounds.addEventListener("click", ()=>{
     humanScore = 0;
     computerScore = 0;
-    rounds = "Infinite";
+    rounds = "NaN";
     roundsLeft.textContent = rounds;
     computerResponse.textContent = "Computer";
+    winner.textContent = "";
     updateScore();
     allowPlay();
 });
