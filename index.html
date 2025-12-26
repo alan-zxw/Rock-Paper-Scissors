@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RPS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,17 +13,50 @@
 
     <div class="middle">
         <div class="sidebar">
-            SETTINGS
+            <div class="tracker">
+                <h3>SCORE</h3>
+                <span id="score"></span>
+                <h5>Rounds Left: <span id="rounds-left"> </span></h5>
+            </div>
+            
+
+            <h3>SETTINGS</h3>
+
+            
+            <div class="select-rounds">
+                <h4>Best Of:</h4>
+                <button id="3-rounds">3</button>
+                <button id="5-rounds">5</button>
+                <button id="7-rounds">7</button>
+                <button id="infinite">Infinite</button>
+            </div>
+
+
+            <div class="reset">
+                <button>Reset Score</button>
+            </div>
+            
         </div>
 
         <div class="main">
 
             <div class="tophalf">
-                COMPUTER
+                <span>COMPUTER</span>
             </div>
 
             <div class="bottomhalf">
-                PLAYER
+                <span class="player">PLAYER</span>
+                <div class="choice">
+                    <textarea id="player-move" readonly>
+                    
+                    </textarea>
+                </div>
+
+                <div class="options">
+                    <button id="rock">Rock</button>
+                    <button id="paper">Paper</button>
+                    <button id="scissors">Scissors</button>
+                </div>
             </div>
 
         </div>
