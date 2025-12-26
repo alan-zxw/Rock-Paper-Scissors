@@ -81,6 +81,10 @@ body {
     justify-content: center;
 }
 
+#player-move {
+    text-align: center;
+}
+
 .player {
     display: flex;
     flex-direction: row;

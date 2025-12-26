@@ -16,7 +16,7 @@
             <div class="tracker">
                 <h3>SCORE</h3>
                 <span id="score"></span>
-                <h5>Rounds Left: <span id="rounds-left"> </span></h5>
+                <h5>Rounds Left: <span id="rounds-left">0</span></h5>
             </div>
             
 
@@ -25,15 +25,19 @@
             
             <div class="select-rounds">
                 <h4>Best Of:</h4>
-                <button id="3-rounds">3</button>
-                <button id="5-rounds">5</button>
-                <button id="7-rounds">7</button>
+                <button id="t-rounds">3</button>
+                <button id="f-rounds">5</button>
+                <button id="s-rounds">7</button>
                 <button id="infinite">Infinite</button>
             </div>
 
 
             <div class="reset">
-                <button>Reset Score</button>
+                <button id="reset-button">Reset Score</button>
+            </div>
+
+            <div>
+                <h4 id="winner"></h4>
             </div>
             
         </div>
@@ -41,11 +45,10 @@
         <div class="main">
 
             <div class="tophalf">
-                <span>COMPUTER</span>
+                <span id="computer-choice">COMPUTER</span>
             </div>
 
             <div class="bottomhalf">
-                <span class="player">PLAYER</span>
                 <div class="choice">
                     <textarea id="player-move" readonly>
                     
@@ -53,9 +56,9 @@
                 </div>
 
                 <div class="options">
-                    <button id="rock">Rock</button>
-                    <button id="paper">Paper</button>
-                    <button id="scissors">Scissors</button>
+                    <button id="rock" disabled>Rock</button>
+                    <button id="paper" disabled>Paper</button>
+                    <button id="scissors" disabled>Scissors</button>
                 </div>
             </div>
 
@@ -67,6 +70,6 @@
         <h4>Used to practice HTML, CSS, and JavaScript :)</h4>
     </div>
 
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
 </body>
 </html>
